@@ -2,7 +2,9 @@ import React from "react";
 
 function Jumbotron(){
     const jumbotronStyle = {
-        fontFamily: "Josefin Sans, sans-serif"
+        fontFamily: "Josefin Sans, sans-serif",
+        backgroundColor:"brown",
+        color:"black"
     }
     return(
         <div className="jumbotron text-center shadow" style={jumbotronStyle}>

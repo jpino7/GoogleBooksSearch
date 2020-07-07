@@ -1,8 +1,8 @@
 import React from "react";
 
-function Searchbar(props){
+function SearchBar(props){
     return(
-        <form className="border" style={{padding:"1%",backgroundColor:"white"}}>
+        <form className="border" style={{padding:"1%",backgroundColor:"brown"}}>
             <div className="form-group" >
                 <label htmlFor="searchInput">Search for a book</label>
                 <input 
@@ -18,9 +18,9 @@ function Searchbar(props){
             onClick={props.onClick}
             type="submit" 
             className="btn btn-primary" 
-            style={{backgroundColor:"auburn", borderColor:"auburn"}}>Search</button>
+            style={{backgroundColor:"orange", borderColor:"orange"}}>Search</button>
         </form>
     )
 }
 
-export default Searchbar;
+export default SearchBar;

@@ -4,8 +4,8 @@ import { Link , useLocation} from "react-router-dom";
 function Navbar(){
     const navbarStyle = {
         fontFamily: "Josefin Sans, sans-serif",
-        backgroundColor:"auburn",
-        color:"white"
+        backgroundColor:"orange",
+        color:"black"
     }
 
     const location = useLocation();

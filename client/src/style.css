@@ -107,3 +107,8 @@
   html, body{
       background-image: url("./utils/images/LibraryofBooks.jpg");
   }
+
+  h3 {
+    margin-top: 10px;
+    color: white;
+  }

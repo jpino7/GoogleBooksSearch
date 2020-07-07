@@ -10,10 +10,10 @@ function SavedBook(props){
                     <p>Written By: <span style={{color: "auburn"}}>{props.author}</span></p>
                 </div>
                 <div className="col-7">
-                    <a href={props.bookLink} target="_blank" rel="noopener noreferrer" className="btn btn-info mr-2" style={{backgroundColor:"auburn", borderColor:"auburn", cursor:"pointer"}}>View</a>
-                    <a className="btn btn-secondary" style={{backgroundColor:"#ff704d", borderColor:"#ff704d", color:"white", cursor:"pointer"}} onClick={props.handleDelete}
+                    <a href={props.bookLink} target="_blank" rel="noopener noreferrer" className="btn btn-info mr-2" style={{backgroundColor:"orange", borderColor:"orange", cursor:"pointer"}}>View</a>
+                    <button className="btn btn-secondary" style={{backgroundColor:"#ff704d", borderColor:"#ff704d", color:"white", cursor:"pointer"}} onClick={props.handleDelete}
                         data-bookid={props.bookId}
-                    >Delete</a>
+                    >Delete</button>
                 </div>
             </div>
 

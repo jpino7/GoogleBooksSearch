@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
+const db = require("./models");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -13,35 +14,35 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Define API routes here
-//GET
-app.get("/api/books", (req, res) => {
+// Send every request to the React app
+// Define any API routes before this runs
+
+app.get("/api/books", (req,res) => {
   console.log("GET ROUTE HIT!");
   db.Book.find({})
-    .then(dbBooks => {
-      console.log(dbBooks)
-      res.json(dbBooks);
-    })
-    .catch(err => {
-      console.log(err);
-      res.json(err);
-    })
+        .then(dbBooks => {
+            console.log(dbBooks)
+            res.json(dbBooks);
+        })
+        .catch(err => {
+            console.log(err);
+            res.json(err);
+        })
 })
-// POST
 app.post("/api/books", (req, res) => {
   console.log("POST ROUTE HIT!");
   console.log(req.body);
   db.Book
-    .create(req.body)
-    .then(dbModel => { res.json(dbModel) })
-    .catch(err => res.status(422).json(err));
+      .create(req.body)
+      .then(dbModel => {res.json(dbModel)})
+      .catch(err => res.status(422).json(err));
 });
-// DELETE
+
 app.delete("/api/books/:id", (req, res) => {
   console.log("DELETE ROUTE HIT!");
   console.log(req.params.id);
-  db.Book.deleteOne({ bookId: req.params.id }, function (err) {
-    if (err) {
+  db.Book.deleteOne({bookId: req.params.id}, function(err) {
+    if(err){
       throw err;
     }
     console.log("successfully deleted");
@@ -49,9 +50,7 @@ app.delete("/api/books/:id", (req, res) => {
   })
 })
 
-// Send every other request to the React app
-// Define any API routes before this runs
-app.get("*", (req, res) => {
+app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
