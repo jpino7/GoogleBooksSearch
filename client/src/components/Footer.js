@@ -6,12 +6,20 @@ function Footer(){
         fontFamily: "Josefin Sans, sans-serif",
         textAlign: "center",
         backgroundColor:"orange",
-        color:"black"
+        color:"black",
+        position: "fixed",
+        width: "100%",
+        right: "0",
+        bottom: "0",
+        left: "0",
+    }
+    const pStyle = {
+        marginTop: "15px"
     }
 
     return(
         <footer className="footer" style={FooterStyle}>
-            <p>© 2020 Copyright • Joanna Pino</p>
+            <p style={pStyle}>© 2020 Copyright • Joanna Pino</p>
         </footer>
     )
 }
