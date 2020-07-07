@@ -1,29 +1,68 @@
-# Create React Express App
 
-## About This Boilerplate
+# Google Books Search
 
-This setup allows for a Node/Express/React app which can be easily deployed to Heroku.
+## Description
+To create a React-based Google Books Search application. This project required me to create React components, work with util functions, and utilize React lifestyle methods to query and display based on user searches. This app uses React, Google Books API, Node, Express, and MongoDB. Users can save books to review or purchase later. 
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+## Badges
+![badge](https://img.shields.io/github/languages/top/jpino7/GoogleBooksSearch)
 
-## Starting the app locally
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributors](#contributing)
+- [License](#license)
+- [Technologies](#technologies)
+- [Questions](#questions)
 
-Start by installing front and backend dependencies. While in this directory, run the following command:
+## Installation
+None is required.
 
-```
-npm install
-```
+## Usage
 
-This should install node modules within the server and the client folder.
+Steps:
 
-After both installations complete, run the following command in your terminal:
+1. Go to Google Books Search site
+2. Search for a Book - click SEARCH after you enter book name/title.
+3. Once SEARCH is clicked the results will show.
+4. Results showing will give you the option to 'View' book on Google Play or 'Save' book for later reviewing.
+5. If you click 'Save' you can view your saved list by selecting SAVED tab at the top right hand corner.
+6. Once in the Saved tab you can 'View' book for reading a sample of it or your can 'Delete' book once no longer interested. 
 
-```
-npm start
-```
 
-Your app should now be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
+## License
 
-## Deployment (Heroku)
+Copyright 2020 Joanna Pino
 
-To deploy, simply add and commit your changes, and push to Heroku. As is, the NPM scripts should take care of the rest.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Credits
+[Joanna Pino](https://github.com/jpino7)
+
+## Contributing
+[Contributor Code Of Conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct/)
+
+## Technologies
+
+- React
+- Node.js
+- Express
+- Mongoose
+- MongoDB
+- [Google Books API](https://developers.google.com/books)
+
+## Site
+N/A
+
+## Questions
+For any questions please contact the Project Owner: 
+
+![Profile Image](https://avatars3.githubusercontent.com/u/59301610?v=4)
+
+- **Name:** Joanna Pino
+- **Github Username:** jpino7
+- **Email:** pino3789@gmail.com
